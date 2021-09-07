@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/khogue5/assignments/assignment2/build",
-  "command": "/bin/clang++-10    -g   -o CMakeFiles/assignment2.dir/assignment2.cpp.o -c /home/khogue5/assignments/assignment2/assignment2.cpp",
-  "file": "/home/khogue5/assignments/assignment2/assignment2.cpp"
-}
-]
