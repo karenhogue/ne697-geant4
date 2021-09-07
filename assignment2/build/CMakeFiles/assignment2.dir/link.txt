@@ -1,0 +1,1 @@
+/bin/clang++-10  -g   CMakeFiles/assignment2.dir/assignment2.cpp.o  -o assignment2 
