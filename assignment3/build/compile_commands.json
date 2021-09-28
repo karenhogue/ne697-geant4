@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/khogue5/assignments/assignment3/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/khogue5/assignments/assignment3/include  -g   -o CMakeFiles/mc1d.dir/src/argparser.cpp.o -c /home/khogue5/assignments/assignment3/src/argparser.cpp",
+  "file": "/home/khogue5/assignments/assignment3/src/argparser.cpp"
+},
+{
+  "directory": "/home/khogue5/assignments/assignment3/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/khogue5/assignments/assignment3/include  -g   -o CMakeFiles/mc1d.dir/src/hit.cpp.o -c /home/khogue5/assignments/assignment3/src/hit.cpp",
+  "file": "/home/khogue5/assignments/assignment3/src/hit.cpp"
+},
+{
+  "directory": "/home/khogue5/assignments/assignment3/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/khogue5/assignments/assignment3/include  -g   -o CMakeFiles/mc1d.dir/src/main.cpp.o -c /home/khogue5/assignments/assignment3/src/main.cpp",
+  "file": "/home/khogue5/assignments/assignment3/src/main.cpp"
+},
+{
+  "directory": "/home/khogue5/assignments/assignment3/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/khogue5/assignments/assignment3/include  -g   -o CMakeFiles/mc1d.dir/src/particle.cpp.o -c /home/khogue5/assignments/assignment3/src/particle.cpp",
+  "file": "/home/khogue5/assignments/assignment3/src/particle.cpp"
+},
+{
+  "directory": "/home/khogue5/assignments/assignment3/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/khogue5/assignments/assignment3/include  -g   -o CMakeFiles/mc1d.dir/src/runmanager.cpp.o -c /home/khogue5/assignments/assignment3/src/runmanager.cpp",
+  "file": "/home/khogue5/assignments/assignment3/src/runmanager.cpp"
+}
+]

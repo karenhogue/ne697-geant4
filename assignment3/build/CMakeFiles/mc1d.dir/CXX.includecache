@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/argparser.hpp
+
+../include/hit.hpp
+vector
+-
+
+../include/particle.hpp
+
+/home/khogue5/assignments/assignment3/src/hit.cpp
+hit.hpp
+/home/khogue5/assignments/assignment3/src/hit.hpp
+argparser.hpp
+/home/khogue5/assignments/assignment3/src/argparser.hpp
+iostream
+-
+vector
+-
+
+/home/khogue5/assignments/assignment3/src/particle.cpp
+particle.hpp
+/home/khogue5/assignments/assignment3/src/particle.hpp
+iostream
+-
+

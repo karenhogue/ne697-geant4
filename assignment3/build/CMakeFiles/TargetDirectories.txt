@@ -1,0 +1,3 @@
+/home/khogue5/assignments/assignment3/build/CMakeFiles/rebuild_cache.dir
+/home/khogue5/assignments/assignment3/build/CMakeFiles/edit_cache.dir
+/home/khogue5/assignments/assignment3/build/CMakeFiles/mc1d.dir

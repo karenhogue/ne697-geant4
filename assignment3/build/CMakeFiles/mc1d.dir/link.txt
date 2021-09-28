@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9  -g   CMakeFiles/mc1d.dir/src/argparser.cpp.o CMakeFiles/mc1d.dir/src/hit.cpp.o CMakeFiles/mc1d.dir/src/main.cpp.o CMakeFiles/mc1d.dir/src/particle.cpp.o CMakeFiles/mc1d.dir/src/runmanager.cpp.o  -o mc1d 
