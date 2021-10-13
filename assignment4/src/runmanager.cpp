@@ -82,7 +82,7 @@ namespace mc1d {
         ofstream myFile(filename); //create an output filestream object
 
         for(int i = 0; i < int(vals.size()); ++i) {
-            myFile << vals.at(i) << " " << vals2.at(i) << ",\n";
+            myFile << vals.at(i) << " " << vals2.at(i) << "\n";
         }
 
         myFile.close();
