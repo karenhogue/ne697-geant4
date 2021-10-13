@@ -3,12 +3,10 @@
 using namespace std;
 
 namespace mc1d {
-    Particle::Particle(int particle_ID):
-        
+    Particle::Particle(int particle_ID, int start):
         m_particleID(particle_ID),
-        m_particleLocation(0),
-        m_alive(true)
-        
+        m_alive(true),
+        m_particleLocation(start)
     {
      return; 
     }

@@ -12,9 +12,9 @@ namespace mc1d {
         return;
     }
 
-void Hit::add_hit_location(int const& location) {
-    hitLocations.push_back(location); 
-    //hitLocations[particle_index] = location;
+void Hit::add_hit_location(int const& location, string hit_type) {
+    hitLocations.push_back(location);
+    hitTypes.push_back(hit_type);
     return;
 }
 }

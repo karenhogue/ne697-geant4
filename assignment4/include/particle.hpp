@@ -4,7 +4,7 @@
 namespace mc1d {
     class Particle {
         public:
-            Particle (int particle_ID);
+            Particle (int particle_ID, int start_loc);
 
             int get_particle_ID() const;
             int get_particle_location() const;
