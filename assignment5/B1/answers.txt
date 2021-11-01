@@ -7,7 +7,8 @@ Example B1
 3. 0.344832 picoGy  rms = 0.0667069 picoGy
 
 4. 266.476 picoGy  rms = 6.61582 picoGy;
-My dose went UP -- because...
+My dose went up, which was somewhat counterintuitive because the scoring volume was reduced. However, dose is the energy deposited per unit mass, 
+and, since both the energy deposited and the mass of the trapezoid changed, overall, the dose increased.
 
 5. 250.673 picoGy  rms = 6.4024 picoGy; 
 Yes, the dose changed because the sphere has a larger volume, so more gammas are attenuated before reaching the trapezoid, which is the scoring volume
