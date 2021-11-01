@@ -1,0 +1,12 @@
+/control/verbose 2
+/tracking/verbose 2
+/run/verbose 1
+/process/optical/verbose 1
+/control/cout/ignoreThreadsExcept 0
+#
+/run/initialize
+#
+/tracking/verbose 0
+/gun/particle e+
+/gun/position 0 0 0 cm
+/run/beamOn 1000

@@ -1,0 +1,15 @@
+#
+# Macro file of "exampleB3.cc"
+# % exampleB3 run3.mac
+#
+#/run/numberOfThreads 4
+/run/initialize
+#
+/control/verbose 2
+#
+# change beta source
+#
+/gun/particle ion
+/gun/ion 7 13
+#
+/run/beamOn 100000

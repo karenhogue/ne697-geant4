@@ -1,0 +1,19 @@
+Example B3b
+--------------------------------------------------------------
+
+1. 12585 annihilations
+
+2. 2782 annihilations; There are fewer usable annihilations because NaI has a lower detection efficiency for 511 keV 
+gammas because of its lower atomic number and atomic density than Lu2SiO5
+
+3. The energy threshold is defined in line 86 in B3bRun.cc. The gamma energies are compared to the threshold (and counted) in line 95.
+
+4. Both the number of annihilations and the dose go up if N-13 is used as a beta source (i.e., positron emitter) as opposed to F-18.
+
+F-18:
+annihilations: 2782
+dose: 3.06344 nanoGy 
+
+N-13:
+annihilations: 2904
+dose: 4.9912 nanoGy 

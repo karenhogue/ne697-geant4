@@ -1,0 +1,10 @@
+# Macro file for example B1
+#
+# Initialize kernel
+/run/initialize
+# 
+# gamma0.511 MeV
+/gun/particle gamma
+/gun/energy 0.511 MeV
+#
+/run/beamOn 100000

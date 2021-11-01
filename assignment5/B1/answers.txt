@@ -1,0 +1,22 @@
+Example B1
+------------------------------------------------------------
+1. 252.613 picoGy  rms = 2.47294 picoGy
+
+2. 174.309 picoGy  rms = 4.82425 picoGy 
+
+3. 0.344832 picoGy  rms = 0.0667069 picoGy
+
+4. 266.476 picoGy  rms = 6.61582 picoGy;
+My dose went UP -- because...
+
+5. 250.673 picoGy  rms = 6.4024 picoGy; 
+Yes, the dose changed because the sphere has a larger volume, so more gammas are attenuated before reaching the trapezoid, which is the scoring volume
+
+6. 
+--------------------End of Global Run-----------------------
+ The run consists of 100000 
+ Cumulated dose per run, in scoring volume : 250.673 picoGy  rms = 6.4024 picoGy 
+ Mass of the scoring volume : 216.45 g 
+------------------------------------------------------------
+
+

@@ -1,0 +1,15 @@
+Example OpNovice
+----------------------------
+
+1. Average number of scintillation photons created per event: 67.3 +- 8.78
+
+2. Average number of scintillation photons created per event: 21.9 +- 4.8
+Average number of optical absorption interactions per event: 9.36 +- 3.16
+
+3. 50 MeV^-1 (OpNoviceDetectorConstruction - line 140)
+
+4. Fast time constant: 1 ns; slow time constant: 10 ns
+
+5. Average number of optical absorption interactions per event: 22.2 +- 5.22; this is higher than the 9.36 average from Part 2,
+with significantly larger absorption lengths. After conceptually understanding what absoprtion lengths for scintillators are, more absorptions is consistent
+with shorter absorption lengths.
