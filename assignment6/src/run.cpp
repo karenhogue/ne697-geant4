@@ -37,7 +37,7 @@ namespace ne697 {
     }
     /****** GEANT4 BOILERPLATE ******/
     // Ok, now we've got the container (which is a pointer)
-    G4cout << "Event had " << hc->entries() << " hits" << G4endl;
+    //G4cout << "Event had " << hc->entries() << " hits" << G4endl;
     for (std::size_t ihit = 0; ihit < hc->entries(); ++ihit) {
       // (*hc)[ihit] means we FIRST de-reference hc with the *, then we access
       // the [ihit] element. The parentheses makes it so the de-reference happens
@@ -48,6 +48,7 @@ namespace ne697 {
       // Same as...
       //Hit* hit_in = dynamic_cast<Hit*>((*hc)[ihit]);
       hit_in->setEventID(event->GetEventID());
+/* Print out info for each particle
       G4cout << "Event ID: " << hit_in->getEventID() << "\n";
       G4cout << "Track ID: " << hit_in->getTrackID() << "\n";
       G4cout << "Parent ID: " << hit_in->getParentID() << "\n";
@@ -59,6 +60,7 @@ namespace ne697 {
       G4cout << "Energy: " << G4BestUnit(hit_in->getEnergy(), "Energy") << "\n";
       G4cout << "Time: " << G4BestUnit(hit_in->getTime(), "Time") << "\n"
             << G4endl;
+*/
       m_hits.push_back(*hit_in);
     }
 

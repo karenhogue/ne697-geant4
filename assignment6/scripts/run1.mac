@@ -1,0 +1,7 @@
+
+/run/initialize
+
+/gun/particle gamma
+/gun/energy 5 MeV
+
+/run/beamOn 100000

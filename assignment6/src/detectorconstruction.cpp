@@ -13,7 +13,6 @@ namespace ne697 {
     m_trackingVols()
   {
     G4cout << "Creating DetectorConstruction" << G4endl;
-    build_materials();
   }
 
   DetectorConstruction::~DetectorConstruction() {
@@ -21,17 +20,15 @@ namespace ne697 {
   }
 
   G4PVPlacement* DetectorConstruction::Construct() {
-    auto world_solid = new G4Box("world_solid", 0.5*m, 0.5*m, 0.5*m);
+  // **** World of air
+    auto world_solid = new G4Box("world_solid", 1.0*m, 1.0*m, 1.0*m);
     auto nist = G4NistManager::Instance();
-    //auto world_mat = nist->FindOrBuildMaterial("G4_AIR");
-    auto world_mat = nist->FindOrBuildMaterial("NE697_LIQUID_OXYGEN");
+    auto world_mat = nist->FindOrBuildMaterial("G4_AIR");
     auto world_log = new G4LogicalVolume(
         world_solid,
         world_mat,
         "world_log"
     );
-    // Commented since we don't want to record Hits in the world's air volume
-    //m_trackingVols.push_back(world_log);
     auto world_phys = new G4PVPlacement(
         nullptr,
         G4ThreeVector(0, 0, 0),
@@ -42,17 +39,67 @@ namespace ne697 {
         0,
         true
     );
-
-    auto det_solid = new G4Box("det_solid", 5*cm, 5*cm, 5*cm);
+// ***** NaI detector
+    auto det_solid = new G4Box("det_solid", 25.*cm, 2.5*cm, 25.*cm);
     auto det_mat = nist->FindOrBuildMaterial("G4_SODIUM_IODIDE");
-    auto det_log = new G4LogicalVolume(det_solid, det_mat, "det_log");
+    auto det_log = new G4LogicalVolume(
+        det_solid, 
+        det_mat, 
+        "det_log"
+    );
     // Tracking Hits in this volume
     m_trackingVols.push_back(det_log);
     new G4PVPlacement(
       nullptr,
-      G4ThreeVector(0, 0, 20*cm),
+      G4ThreeVector(0., -30.*cm, 0.),
       det_log,
       "det_phys",
+      world_log,
+      false,
+      0,
+      true
+    );
+// ***** T of tungsten: center pillar
+    auto T_pillar_solid = new G4Box("T_solid", 5.*cm, 1.*cm, 20.*cm);
+    auto T_pillar_mat = nist->FindOrBuildMaterial("G4_W");
+    auto T_pillar_log = new G4LogicalVolume(
+        T_pillar_solid, 
+        T_pillar_mat, 
+        "T_pillar_log"
+    );
+    new G4PVPlacement(
+      nullptr,
+      G4ThreeVector(0., 0., 0.),
+      T_pillar_log,
+      "T_pillar_phys",
+      world_log,
+      false,
+      0,
+      true
+    );
+// ***** T of tungsten: wings
+    auto T_wing_solid = new G4Box("T_wing_solid", 5.*cm, 1.*cm, 5.*cm);
+    auto T_wing_mat = nist->FindOrBuildMaterial("G4_W");
+    auto T_wing_log = new G4LogicalVolume(
+        T_wing_solid, 
+        T_wing_mat, 
+        "T_wing_log"
+    );
+    new G4PVPlacement(
+      nullptr,
+      G4ThreeVector(10.*cm, 0., 15.*cm),
+      T_wing_log,
+      "T_wing_phys",
+      world_log,
+      false,
+      0,
+      true
+    );
+    new G4PVPlacement(
+      nullptr,
+      G4ThreeVector(-10.*cm, 0., 15.*cm),
+      T_wing_log,
+      "T_wing_phys",
       world_log,
       false,
       0,
@@ -69,28 +116,6 @@ namespace ne697 {
     for (auto& log : m_trackingVols) {
       SetSensitiveDetector(log, sd);
     }
-    return;
-  }
-
-  void DetectorConstruction::build_materials() {
-    auto o16 = new G4Isotope("NE697_O16", 8, 16, 15.99491463*g/mole);
-    auto o17 = new G4Isotope("NE697_O17", 8, 17, 16.9991312*g/mole);
-    auto o18 = new G4Isotope("NE697_O18", 8, 18, 17.9991603*g/mole);
-
-    auto nat_o = new G4Element("NE697_natO", "O_ne697", 3);
-    nat_o->AddIsotope(o16, 99.757*perCent);    
-    nat_o->AddIsotope(o17, 0.038*perCent);    
-    nat_o->AddIsotope(o18, 0.205*perCent);
-
-    auto liq_o = new G4Material("NE697_LIQUID_OXYGEN", 1.141*g/cm3, 1);
-    liq_o->AddElement(nat_o, 1);
-    G4cout << "OUR MATERIAL: " << liq_o << G4endl;
-
-    auto nist_man = G4NistManager::Instance();
-    auto nist_o = nist_man->FindOrBuildElement("O");
-    auto nist_liq_o = new G4Material("NIST_LIQUID_OXYGEN", 1.141*g/cm3, 1);
-    nist_liq_o->AddElement(nist_o, 1);
-    G4cout << "NIST MATERIAL: " << nist_liq_o << G4endl;
     return;
   }
 }

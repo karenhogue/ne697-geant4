@@ -17,8 +17,6 @@ namespace ne697 {
     private:
       // List of G4LogicalVolumes we want to connect to the SensitiveDetector
       std::vector<G4LogicalVolume*> m_trackingVols;
-
-      void build_materials();
   };
 }
 

@@ -3,7 +3,6 @@
 #include "run.hpp"
 #include <fstream>
 #include "G4SystemOfUnits.hh"
-#include "runmessenger.hpp"
 
 namespace ne697 {
   RunAction::RunAction():
@@ -12,12 +11,11 @@ namespace ne697 {
     m_path("hits.csv")
     {
       G4cout << "Creating RunAction" << G4endl;
-      m_messenger = new RunMessenger(this);
     }
 
   RunAction::~RunAction() {
     G4cout << "Deleting RunAction" << G4endl;
-    delete m_messenger;
+
   }
 
   G4Run* RunAction::GenerateRun() {
