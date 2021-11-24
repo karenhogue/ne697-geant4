@@ -14,7 +14,7 @@ with open("./build/hits.csv", newline='') as csv_file:
             z = np.append(z, float(row['z[cm]']))
             eventID = row['eventID']
 
-plt.hist2d(x, z, bins=100, cmap = 'Oranges_r')
+plt.hist2d(x, z, bins=100, cmap = 'YlOrBr')
 plt.xlabel("x position (cm)")
 plt.ylabel("z position (cm)")
 plt.colorbar()
