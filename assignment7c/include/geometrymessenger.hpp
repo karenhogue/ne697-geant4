@@ -1,7 +1,7 @@
 #ifndef GEOMETRY_MESSENGER_HPP
 #define GEOMETRY_MESSENGER_HPP
 #include "G4UImessenger.hh"
-#include "G4UIcmdWith3VectorAndUnit.hh"
+#include "G4UIcmdWithADoubleAndUnit.hh"
 
 namespace ne697 {
   // Forward declaration, to resolve circular dependency with DetectorConstruction
@@ -20,7 +20,8 @@ namespace ne697 {
   private:
     DetectorConstruction* m_dc;
     G4UIdirectory* m_directory;
-    G4UIcmdWith3VectorAndUnit* m_detSizeCmd;
+    G4UIcmdWithADoubleAndUnit* m_detThicknessCmd;
+    G4UIcmdWithADoubleAndUnit* m_detSizeCmd;
   };  
 }
 

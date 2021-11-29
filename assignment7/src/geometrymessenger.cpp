@@ -8,20 +8,13 @@ namespace ne697 {
   {
     // Directory: /ne697/geometry
     m_directory = new G4UIdirectory("/ne697/geometry/");
-    m_directory->SetGuidance("Change thickness and size of the detector geometry.");
-
-    // Set detector thickness: /ne697/geometry/det_thickness
-    m_detThicknessCmd = new G4UIcmdWithADoubleAndUnit("/ne697/geometry/det_thickness", this);
-    m_detThicknessCmd->SetGuidance("Set the full thickness of the detector panel.");
-    m_detThicknessCmd->SetParameterName("thickness", true);
-    m_detThicknessCmd->SetDefaultValue(m_dc->get_det_thickness()); //TODO - set to 5cm 
-    m_detThicknessCmd->AvailableForStates(G4State_PreInit);
+    m_directory->SetGuidance("Change parameters of the geometry.");
 
     // Set detector size: /ne697/geometry/det_size
-    m_detSizeCmd = new G4UIcmdWithADoubleAndUnit("/ne697/geometry/det_size", this);
-    m_detSizeCmd->SetGuidance("Set the full x and z extents of the square detector panel.");
-    m_detSizeCmd->SetParameterName("x", true);
-    m_detSizeCmd->SetDefaultValue(m_dc->get_det_size()); //TODO - set to 50cm
+    m_detSizeCmd = new G4UIcmdWith3VectorAndUnit("/ne697/geometry/det_size", this);
+    m_detSizeCmd->SetGuidance("Set the detector size.");
+    m_detSizeCmd->SetParameterName("x", "y", "z", true);
+    m_detSizeCmd->SetDefaultValue(m_dc->get_det_size());
     m_detSizeCmd->AvailableForStates(G4State_PreInit);
   }
 
@@ -31,15 +24,10 @@ namespace ne697 {
   }
 
   void GeometryMessenger::SetNewValue(G4UIcommand* cmd, G4String val) {
-    if (cmd == m_detThicknessCmd) {
-      auto parsed_val = m_detThicknessCmd->GetNewDoubleValue(val);
-      m_dc->set_det_thickness(parsed_val);
-      G4cout << "Detector thickness set to " << G4BestUnit(parsed_val, "Length")
-        << G4endl;
-    }
-
     if (cmd == m_detSizeCmd) {
-      auto parsed_val = m_detSizeCmd->GetNewDoubleValue(val);
+      G4ThreeVector parsed_val = m_detSizeCmd->GetNew3VectorValue(val);
+      // This is fine too - just being clear above
+      //auto parsed_val = m_detSizeCmd->GetNew3VectorValue(val);
       m_dc->set_det_size(parsed_val);
       G4cout << "Detector size set to " << G4BestUnit(parsed_val, "Length")
         << G4endl;
