@@ -14,19 +14,20 @@ namespace ne697 {
     m_detThicknessCmd = new G4UIcmdWithADoubleAndUnit("/ne697/geometry/det_thickness", this);
     m_detThicknessCmd->SetGuidance("Set the full thickness of the detector panel.");
     m_detThicknessCmd->SetParameterName("thickness", true);
-    m_detThicknessCmd->SetDefaultValue(m_dc->get_det_thickness()); //TODO - set to 5cm 
+    m_detThicknessCmd->SetDefaultValue(m_dc->get_det_thickness());
     m_detThicknessCmd->AvailableForStates(G4State_PreInit);
 
     // Set detector size: /ne697/geometry/det_size
     m_detSizeCmd = new G4UIcmdWithADoubleAndUnit("/ne697/geometry/det_size", this);
     m_detSizeCmd->SetGuidance("Set the full x and z extents of the square detector panel.");
     m_detSizeCmd->SetParameterName("x", true);
-    m_detSizeCmd->SetDefaultValue(m_dc->get_det_size()); //TODO - set to 50cm
+    m_detSizeCmd->SetDefaultValue(m_dc->get_det_size());
     m_detSizeCmd->AvailableForStates(G4State_PreInit);
   }
 
   GeometryMessenger::~GeometryMessenger() {
     delete m_directory;
+    delete m_detThicknessCmd;
     delete m_detSizeCmd;
   }
 
