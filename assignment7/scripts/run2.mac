@@ -1,6 +1,5 @@
 /run/initialize
 
-/gun/particle gamma
-/gun/energy 1 MeV
+/ne697/geometry/det_thickness 1 cm
 
 /run/beamOn 100000
