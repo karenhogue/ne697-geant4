@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/sim.dir/src/geometrymessenger.cpp.o"
   "CMakeFiles/sim.dir/src/hit.cpp.o"
   "CMakeFiles/sim.dir/src/main.cpp.o"
+  "CMakeFiles/sim.dir/src/materialmessenger.cpp.o"
   "CMakeFiles/sim.dir/src/pga.cpp.o"
   "CMakeFiles/sim.dir/src/run.cpp.o"
   "CMakeFiles/sim.dir/src/runaction.cpp.o"

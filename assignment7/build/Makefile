@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/karen/apps/geant4/ne697-geant4/assignment7c
+CMAKE_SOURCE_DIR = /home/karen/apps/geant4/ne697-geant4/assignment7
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/karen/apps/geant4/ne697-geant4/assignment7c/build
+CMAKE_BINARY_DIR = /home/karen/apps/geant4/ne697-geant4/assignment7/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles /home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles /home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -285,6 +285,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/materialmessenger.o: src/materialmessenger.cpp.o
+
+.PHONY : src/materialmessenger.o
+
+# target to build an object file
+src/materialmessenger.cpp.o:
+	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/materialmessenger.cpp.o
+.PHONY : src/materialmessenger.cpp.o
+
+src/materialmessenger.i: src/materialmessenger.cpp.i
+
+.PHONY : src/materialmessenger.i
+
+# target to preprocess a source file
+src/materialmessenger.cpp.i:
+	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/materialmessenger.cpp.i
+.PHONY : src/materialmessenger.cpp.i
+
+src/materialmessenger.s: src/materialmessenger.cpp.s
+
+.PHONY : src/materialmessenger.s
+
+# target to generate assembly for a file
+src/materialmessenger.cpp.s:
+	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/materialmessenger.cpp.s
+.PHONY : src/materialmessenger.cpp.s
+
 src/pga.o: src/pga.cpp.o
 
 .PHONY : src/pga.o
@@ -447,6 +474,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/materialmessenger.o"
+	@echo "... src/materialmessenger.i"
+	@echo "... src/materialmessenger.s"
 	@echo "... src/pga.o"
 	@echo "... src/pga.i"
 	@echo "... src/pga.s"

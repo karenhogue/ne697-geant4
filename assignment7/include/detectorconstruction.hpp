@@ -9,6 +9,7 @@ namespace ne697 {
   // You still need to #include "geometrymessenger.hpp" in
   // detectorconstruction.cpp
   class GeometryMessenger;
+  class MaterialMessenger;
 
   class DetectorConstruction: public G4VUserDetectorConstruction {
     public:
@@ -28,23 +29,23 @@ namespace ne697 {
       G4double const& get_det_thickness() const;
       void set_det_size(G4double const& detsize);
       G4double const& get_det_size() const;
+      void set_det_material(G4String const& detmaterial);
+      G4String const& get_det_material() const;      
 
     private:
-      // Only called once in the constructor. Once we build them, they insert
-      // themselves into Geant4's global database of G4Material objects, then
-      // we can ask for them anywhere in the code by name
-      void build_materials();
 
       // List of G4LogicalVolumes we want to connect to the SensitiveDetector
       std::vector<G4LogicalVolume*> m_trackingVols;
 
-      GeometryMessenger* m_messenger;
+      GeometryMessenger* m_geom_messenger;
+      MaterialMessenger* m_mat_messenger;
 
       // Variables we will be modifying from the UI, so we want them to be
       // attached to DetectorConstruction. Then, when Construct() is called,
       // m_detSize holds whatever value the user set
       G4double m_detSize;
       G4double m_detThickness;
+      G4String m_detMaterial;
   };
 }
 

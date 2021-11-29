@@ -4,17 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/actioninitialization.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/actioninitialization.cpp.o"
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/detectorconstruction.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/detectorconstruction.cpp.o"
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/eventaction.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/eventaction.cpp.o"
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/geometrymessenger.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/geometrymessenger.cpp.o"
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/hit.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/hit.cpp.o"
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/main.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/main.cpp.o"
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/pga.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/pga.cpp.o"
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/run.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/run.cpp.o"
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/runaction.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/runaction.cpp.o"
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/runmessenger.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/runmessenger.cpp.o"
-  "/home/karen/apps/geant4/ne697-geant4/assignment7c/src/sensitivedetector.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir/src/sensitivedetector.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/actioninitialization.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/actioninitialization.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/detectorconstruction.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/detectorconstruction.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/eventaction.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/eventaction.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/geometrymessenger.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/geometrymessenger.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/hit.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/hit.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/main.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/main.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/materialmessenger.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/materialmessenger.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/pga.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/pga.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/run.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/run.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/runaction.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/runaction.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/runmessenger.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/runmessenger.cpp.o"
+  "/home/karen/apps/geant4/ne697-geant4/assignment7/src/sensitivedetector.cpp" "/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir/src/sensitivedetector.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

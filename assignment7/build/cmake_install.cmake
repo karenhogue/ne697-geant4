@@ -1,4 +1,4 @@
-# Install script for directory: /home/karen/apps/geant4/ne697-geant4/assignment7c
+# Install script for directory: /home/karen/apps/geant4/ne697-geant4/assignment7
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/karen/apps/geant4/ne697-geant4/assignment7c/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/karen/apps/geant4/ne697-geant4/assignment7/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

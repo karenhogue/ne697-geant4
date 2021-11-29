@@ -1,2 +1,0 @@
-eventID,trackID,parentID,particle,creator_process,volume,x[cm],y[cm],z[cm],energy_dep[keV],time[ns]
-0,1,0,gamma,generator,det_phys,-17.3292,-32.5,11.4357,0,2.08478

@@ -1,3 +1,3 @@
-/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/rebuild_cache.dir
-/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/edit_cache.dir
-/home/karen/apps/geant4/ne697-geant4/assignment7c/build/CMakeFiles/sim.dir
+/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/rebuild_cache.dir
+/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/edit_cache.dir
+/home/karen/apps/geant4/ne697-geant4/assignment7/build/CMakeFiles/sim.dir

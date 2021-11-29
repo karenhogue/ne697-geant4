@@ -45,11 +45,12 @@ CMakeFiles/sim.dir/src/actioninitialization.cpp.o
  /home/karen/apps/geant4/include/Geant4/pwdefs.hh
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/actioninitialization.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/actioninitialization.cpp
 CMakeFiles/sim.dir/src/detectorconstruction.cpp.o
  ../include/detectorconstruction.hpp
  ../include/geometrymessenger.hpp
  ../include/hit.hpp
+ ../include/materialmessenger.hpp
  ../include/sensitivedetector.hpp
  /home/karen/apps/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /home/karen/apps/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
@@ -183,6 +184,7 @@ CMakeFiles/sim.dir/src/detectorconstruction.cpp.o
  /home/karen/apps/geant4/include/Geant4/G4UAdapter.hh
  /home/karen/apps/geant4/include/Geant4/G4UBox.hh
  /home/karen/apps/geant4/include/Geant4/G4UIcmdWithADoubleAndUnit.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIcmdWithAString.hh
  /home/karen/apps/geant4/include/Geant4/G4UIcommand.hh
  /home/karen/apps/geant4/include/Geant4/G4UIdirectory.hh
  /home/karen/apps/geant4/include/Geant4/G4UImessenger.hh
@@ -220,7 +222,7 @@ CMakeFiles/sim.dir/src/detectorconstruction.cpp.o
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
  /home/karen/apps/geant4/include/Geant4/trkdefs.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/detectorconstruction.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/detectorconstruction.cpp
 CMakeFiles/sim.dir/src/eventaction.cpp.o
  ../include/eventaction.hpp
  /home/karen/apps/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
@@ -474,7 +476,7 @@ CMakeFiles/sim.dir/src/eventaction.cpp.o
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
  /home/karen/apps/geant4/include/Geant4/trkdefs.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/eventaction.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/eventaction.cpp
 CMakeFiles/sim.dir/src/geometrymessenger.cpp.o
  ../include/detectorconstruction.hpp
  ../include/geometrymessenger.hpp
@@ -540,7 +542,7 @@ CMakeFiles/sim.dir/src/geometrymessenger.cpp.o
  /home/karen/apps/geant4/include/Geant4/globals.hh
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/geometrymessenger.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/geometrymessenger.cpp
 CMakeFiles/sim.dir/src/hit.cpp.o
  ../include/hit.hpp
  /home/karen/apps/geant4/include/Geant4/CLHEP/Utility/defs.h
@@ -564,7 +566,7 @@ CMakeFiles/sim.dir/src/hit.cpp.o
  /home/karen/apps/geant4/include/Geant4/globals.hh
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/hit.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/hit.cpp
 CMakeFiles/sim.dir/src/main.cpp.o
  ../include/actioninitialization.hpp
  ../include/detectorconstruction.hpp
@@ -930,7 +932,73 @@ CMakeFiles/sim.dir/src/main.cpp.o
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
  /home/karen/apps/geant4/include/Geant4/trkdefs.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/main.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/main.cpp
+CMakeFiles/sim.dir/src/materialmessenger.cpp.o
+ ../include/detectorconstruction.hpp
+ ../include/materialmessenger.hpp
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Geometry/BasicVector3D.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Geometry/Normal3D.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Geometry/Point3D.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Geometry/Transform3D.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Geometry/Transform3D.icc
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Geometry/Vector3D.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Units/PhysicalConstants.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Units/SystemOfUnits.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Utility/defs.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/AxisAngle.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/AxisAngle.icc
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/LorentzVector.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/LorentzVector.icc
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/Rotation.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/Rotation.icc
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/RotationInterfaces.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/RotationInterfaces.icc
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/RotationX.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/RotationX.icc
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/RotationY.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/RotationY.icc
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/RotationZ.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/RotationZ.icc
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/ThreeVector.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/karen/apps/geant4/include/Geant4/G4ApplicationState.hh
+ /home/karen/apps/geant4/include/Geant4/G4AutoLock.hh
+ /home/karen/apps/geant4/include/Geant4/G4EnvironmentUtils.hh
+ /home/karen/apps/geant4/include/Geant4/G4Exception.hh
+ /home/karen/apps/geant4/include/Geant4/G4ExceptionSeverity.hh
+ /home/karen/apps/geant4/include/Geant4/G4GeomSplitter.hh
+ /home/karen/apps/geant4/include/Geant4/G4GlobalConfig.hh
+ /home/karen/apps/geant4/include/Geant4/G4LogicalVolume.hh
+ /home/karen/apps/geant4/include/Geant4/G4LogicalVolume.icc
+ /home/karen/apps/geant4/include/Geant4/G4PVPlacement.hh
+ /home/karen/apps/geant4/include/Geant4/G4Region.hh
+ /home/karen/apps/geant4/include/Geant4/G4Region.icc
+ /home/karen/apps/geant4/include/Geant4/G4RotationMatrix.hh
+ /home/karen/apps/geant4/include/Geant4/G4String.hh
+ /home/karen/apps/geant4/include/Geant4/G4String.icc
+ /home/karen/apps/geant4/include/Geant4/G4Threading.hh
+ /home/karen/apps/geant4/include/Geant4/G4ThreeVector.hh
+ /home/karen/apps/geant4/include/Geant4/G4Transform3D.hh
+ /home/karen/apps/geant4/include/Geant4/G4Types.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIcmdWithAString.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIcommand.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIdirectory.hh
+ /home/karen/apps/geant4/include/Geant4/G4UImessenger.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIparameter.hh
+ /home/karen/apps/geant4/include/Geant4/G4UItokenNum.hh
+ /home/karen/apps/geant4/include/Geant4/G4UnitsTable.hh
+ /home/karen/apps/geant4/include/Geant4/G4UnitsTable.icc
+ /home/karen/apps/geant4/include/Geant4/G4VExceptionHandler.hh
+ /home/karen/apps/geant4/include/Geant4/G4VPhysicalVolume.hh
+ /home/karen/apps/geant4/include/Geant4/G4VPhysicalVolume.icc
+ /home/karen/apps/geant4/include/Geant4/G4VUserDetectorConstruction.hh
+ /home/karen/apps/geant4/include/Geant4/G4ios.hh
+ /home/karen/apps/geant4/include/Geant4/geomdefs.hh
+ /home/karen/apps/geant4/include/Geant4/geomwdefs.hh
+ /home/karen/apps/geant4/include/Geant4/globals.hh
+ /home/karen/apps/geant4/include/Geant4/templates.hh
+ /home/karen/apps/geant4/include/Geant4/tls.hh
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/materialmessenger.cpp
 CMakeFiles/sim.dir/src/pga.cpp.o
  ../include/pga.hpp
  /home/karen/apps/geant4/include/Geant4/CLHEP/Random/DualRand.h
@@ -1013,7 +1081,7 @@ CMakeFiles/sim.dir/src/pga.cpp.o
  /home/karen/apps/geant4/include/Geant4/pwdefs.hh
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/pga.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/pga.cpp
 CMakeFiles/sim.dir/src/run.cpp.o
  ../include/hit.hpp
  ../include/run.hpp
@@ -1160,7 +1228,7 @@ CMakeFiles/sim.dir/src/run.cpp.o
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
  /home/karen/apps/geant4/include/Geant4/trkdefs.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/run.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/run.cpp
 CMakeFiles/sim.dir/src/runaction.cpp.o
  ../include/hit.hpp
  ../include/run.hpp
@@ -1204,7 +1272,7 @@ CMakeFiles/sim.dir/src/runaction.cpp.o
  /home/karen/apps/geant4/include/Geant4/globals.hh
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/runaction.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/runaction.cpp
 CMakeFiles/sim.dir/src/runmessenger.cpp.o
  ../include/hit.hpp
  ../include/runaction.hpp
@@ -1239,7 +1307,7 @@ CMakeFiles/sim.dir/src/runmessenger.cpp.o
  /home/karen/apps/geant4/include/Geant4/globals.hh
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/runmessenger.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/runmessenger.cpp
 CMakeFiles/sim.dir/src/sensitivedetector.cpp.o
  ../include/hit.hpp
  ../include/sensitivedetector.hpp
@@ -1430,4 +1498,4 @@ CMakeFiles/sim.dir/src/sensitivedetector.cpp.o
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
  /home/karen/apps/geant4/include/Geant4/trkdefs.hh
- /home/karen/apps/geant4/ne697-geant4/assignment7c/src/sensitivedetector.cpp
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/sensitivedetector.cpp

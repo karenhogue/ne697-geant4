@@ -1,8 +1,8 @@
 /run/verbose 0
 /run/initialize 
 /run/physicsModified 
-/tracking/storeTrajectory 1
-s/open OGL
+/control/execute vis.mac
+/vis/open OGL
 /vis/sceneHandler/create OGL
 /vis/viewer/create ! ! 600
 /vis/viewer/refresh
@@ -45,4 +45,3 @@ s/open OGL
 /vis/scene/endOfEventAction accumulate 100
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
-/run/beamOn 1

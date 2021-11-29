@@ -11,11 +11,11 @@ namespace ne697 {
     m_directory->SetGuidance("Change material.");
 
     // Set detector material: /ne697/geometry/det_thickness
-    m_detThicknessCmd = new G4UIcmdWithADoubleAndUnit("/ne697/geometry/det_material", this);
-    m_detThicknessCmd->SetGuidance("Set the detector material.");
-    m_detThicknessCmd->SetParameterName("material", true);
-    m_detThicknessCmd->SetDefaultValue(m_dc->get_det_material());
-    m_detThicknessCmd->AvailableForStates(G4State_PreInit);
+    m_detMaterialCmd = new G4UIcmdWithAString("/ne697/geometry/det_material", this);
+    m_detMaterialCmd->SetGuidance("Set the detector material.");
+    m_detMaterialCmd->SetParameterName("material", true);
+    m_detMaterialCmd->SetDefaultValue(m_dc->get_det_material());
+    m_detMaterialCmd->AvailableForStates(G4State_PreInit);
 
   }
 
@@ -26,9 +26,8 @@ namespace ne697 {
 
   void MaterialMessenger::SetNewValue(G4UIcommand* cmd, G4String val) {
     if (cmd == m_detMaterialCmd) {
-      auto parsed_val = m_detMaterialCmd->GetNewStringValue(val);
-      m_dc->set_det_material(parsed_val);
-      G4cout << "Detector material set to " << G4endl;
+      m_dc->set_det_material(val);
+      G4cout << "Detector material set to " << val << G4endl;
     }
     // Command didn't match
     return;
