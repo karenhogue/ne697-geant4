@@ -6,7 +6,7 @@ x=np.array([])
 z=np.array([])
 eventID = -1
 
-with open("../build/run5_hits.csv", newline='') as csv_file:
+with open("../build/run6_hits.csv", newline='') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     for row in csv_reader:
         if(row['eventID']!=eventID):
