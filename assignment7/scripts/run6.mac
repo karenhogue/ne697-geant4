@@ -1,3 +1,5 @@
+/ne697/run/save_path ./run6_hits.csv
+
 /run/initialize
 
 /run/beamOn 100000

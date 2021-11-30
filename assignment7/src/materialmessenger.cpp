@@ -11,7 +11,7 @@ namespace ne697 {
     m_directory->SetGuidance("Change material.");
 
     // Set detector material: /ne697/geometry/det_thickness
-    m_detMaterialCmd = new G4UIcmdWithAString("/ne697/geometry/det_material", this);
+    m_detMaterialCmd = new G4UIcmdWithAString("/ne697/material/det_material", this);
     m_detMaterialCmd->SetGuidance("Set the detector material.");
     m_detMaterialCmd->SetParameterName("material", true);
     m_detMaterialCmd->SetDefaultValue(m_dc->get_det_material());

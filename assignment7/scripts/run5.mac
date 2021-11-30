@@ -1,6 +1,9 @@
+/ne697/run/save_path ./run5_hits.csv
+
 /ne697/material/det_material G4_Ge
-/gun/energy 300 keV
 
 /run/initialize
+
+/gun/energy 300 keV
 
 /run/beamOn 100000

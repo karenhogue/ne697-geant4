@@ -34,6 +34,13 @@ namespace ne697 {
   void GeometryMessenger::SetNewValue(G4UIcommand* cmd, G4String val) {
     if (cmd == m_detThicknessCmd) {
       auto parsed_val = m_detThicknessCmd->GetNewDoubleValue(val);
+
+      //error if negative thickness
+      if (parsed_val < 0) {
+      G4cerr << "Detector thickness cannot be negative! Given thickness not applied." << G4endl;
+      return;
+      }
+      
       m_dc->set_det_thickness(parsed_val);
       G4cout << "Detector thickness set to " << G4BestUnit(parsed_val, "Length")
         << G4endl;
