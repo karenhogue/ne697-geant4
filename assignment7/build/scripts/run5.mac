@@ -1,6 +1,0 @@
-/run/initialize
-
-/gun/particle neutron
-/gun/energy 1 eV
-
-/run/beamOn 100000
