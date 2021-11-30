@@ -33,6 +33,12 @@ namespace ne697 {
         auto track = step->GetTrack();
         // "must use class tag", G4VSensitiveDetector has a member function
         // called Hit() so this would be ambiguous
+        if (track->GetDefinition()->GetParticleName() != "e-"){
+          return true;
+        }
+        if (step->GetTotalEnergyDeposit() <= 0){
+          return true;
+        }
         auto hit = new ne697::Hit(
             track->GetTrackID(), track->GetParentID(), track->GetVolume()->GetName(),
             track->GetDefinition()->GetParticleName(),

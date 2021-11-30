@@ -231,6 +231,33 @@ src/geometrymessenger.cpp.s:
 	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/geometrymessenger.cpp.s
 .PHONY : src/geometrymessenger.cpp.s
 
+src/gunmessenger.o: src/gunmessenger.cpp.o
+
+.PHONY : src/gunmessenger.o
+
+# target to build an object file
+src/gunmessenger.cpp.o:
+	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/gunmessenger.cpp.o
+.PHONY : src/gunmessenger.cpp.o
+
+src/gunmessenger.i: src/gunmessenger.cpp.i
+
+.PHONY : src/gunmessenger.i
+
+# target to preprocess a source file
+src/gunmessenger.cpp.i:
+	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/gunmessenger.cpp.i
+.PHONY : src/gunmessenger.cpp.i
+
+src/gunmessenger.s: src/gunmessenger.cpp.s
+
+.PHONY : src/gunmessenger.s
+
+# target to generate assembly for a file
+src/gunmessenger.cpp.s:
+	$(MAKE) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/gunmessenger.cpp.s
+.PHONY : src/gunmessenger.cpp.s
+
 src/hit.o: src/hit.cpp.o
 
 .PHONY : src/hit.o
@@ -468,6 +495,9 @@ help:
 	@echo "... src/geometrymessenger.o"
 	@echo "... src/geometrymessenger.i"
 	@echo "... src/geometrymessenger.s"
+	@echo "... src/gunmessenger.o"
+	@echo "... src/gunmessenger.i"
+	@echo "... src/gunmessenger.s"
 	@echo "... src/hit.o"
 	@echo "... src/hit.i"
 	@echo "... src/hit.s"

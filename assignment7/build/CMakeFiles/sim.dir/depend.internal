@@ -543,6 +543,51 @@ CMakeFiles/sim.dir/src/geometrymessenger.cpp.o
  /home/karen/apps/geant4/include/Geant4/templates.hh
  /home/karen/apps/geant4/include/Geant4/tls.hh
  /home/karen/apps/geant4/ne697-geant4/assignment7/src/geometrymessenger.cpp
+CMakeFiles/sim.dir/src/gunmessenger.cpp.o
+ ../include/gunmessenger.hpp
+ ../include/pga.hpp
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Units/PhysicalConstants.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Units/SystemOfUnits.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Utility/defs.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/ThreeVector.h
+ /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/karen/apps/geant4/include/Geant4/G4Allocator.hh
+ /home/karen/apps/geant4/include/Geant4/G4AllocatorPool.hh
+ /home/karen/apps/geant4/include/Geant4/G4ApplicationState.hh
+ /home/karen/apps/geant4/include/Geant4/G4AutoLock.hh
+ /home/karen/apps/geant4/include/Geant4/G4EnvironmentUtils.hh
+ /home/karen/apps/geant4/include/Geant4/G4Exception.hh
+ /home/karen/apps/geant4/include/Geant4/G4ExceptionSeverity.hh
+ /home/karen/apps/geant4/include/Geant4/G4GlobalConfig.hh
+ /home/karen/apps/geant4/include/Geant4/G4PDefManager.hh
+ /home/karen/apps/geant4/include/Geant4/G4ParticleDefinition.hh
+ /home/karen/apps/geant4/include/Geant4/G4ParticleDefinition.icc
+ /home/karen/apps/geant4/include/Geant4/G4ParticleGun.hh
+ /home/karen/apps/geant4/include/Geant4/G4ParticleMomentum.hh
+ /home/karen/apps/geant4/include/Geant4/G4PrimaryParticle.hh
+ /home/karen/apps/geant4/include/Geant4/G4PrimaryVertex.hh
+ /home/karen/apps/geant4/include/Geant4/G4String.hh
+ /home/karen/apps/geant4/include/Geant4/G4String.icc
+ /home/karen/apps/geant4/include/Geant4/G4Threading.hh
+ /home/karen/apps/geant4/include/Geant4/G4ThreeVector.hh
+ /home/karen/apps/geant4/include/Geant4/G4Types.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIcmdWithADoubleAndUnit.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIcommand.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIdirectory.hh
+ /home/karen/apps/geant4/include/Geant4/G4UImessenger.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIparameter.hh
+ /home/karen/apps/geant4/include/Geant4/G4UItokenNum.hh
+ /home/karen/apps/geant4/include/Geant4/G4UnitsTable.hh
+ /home/karen/apps/geant4/include/Geant4/G4UnitsTable.icc
+ /home/karen/apps/geant4/include/Geant4/G4VExceptionHandler.hh
+ /home/karen/apps/geant4/include/Geant4/G4VPrimaryGenerator.hh
+ /home/karen/apps/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh
+ /home/karen/apps/geant4/include/Geant4/G4ios.hh
+ /home/karen/apps/geant4/include/Geant4/globals.hh
+ /home/karen/apps/geant4/include/Geant4/pwdefs.hh
+ /home/karen/apps/geant4/include/Geant4/templates.hh
+ /home/karen/apps/geant4/include/Geant4/tls.hh
+ /home/karen/apps/geant4/ne697-geant4/assignment7/src/gunmessenger.cpp
 CMakeFiles/sim.dir/src/hit.cpp.o
  ../include/hit.hpp
  /home/karen/apps/geant4/include/Geant4/CLHEP/Utility/defs.h
@@ -1000,6 +1045,7 @@ CMakeFiles/sim.dir/src/materialmessenger.cpp.o
  /home/karen/apps/geant4/include/Geant4/tls.hh
  /home/karen/apps/geant4/ne697-geant4/assignment7/src/materialmessenger.cpp
 CMakeFiles/sim.dir/src/pga.cpp.o
+ ../include/gunmessenger.hpp
  ../include/pga.hpp
  /home/karen/apps/geant4/include/Geant4/CLHEP/Random/DualRand.h
  /home/karen/apps/geant4/include/Geant4/CLHEP/Random/JamesRandom.h
@@ -1053,6 +1099,7 @@ CMakeFiles/sim.dir/src/pga.cpp.o
  /home/karen/apps/geant4/include/Geant4/CLHEP/Vector/ThreeVector.icc
  /home/karen/apps/geant4/include/Geant4/G4Allocator.hh
  /home/karen/apps/geant4/include/Geant4/G4AllocatorPool.hh
+ /home/karen/apps/geant4/include/Geant4/G4ApplicationState.hh
  /home/karen/apps/geant4/include/Geant4/G4AutoLock.hh
  /home/karen/apps/geant4/include/Geant4/G4EnvironmentUtils.hh
  /home/karen/apps/geant4/include/Geant4/G4Exception.hh
@@ -1072,6 +1119,12 @@ CMakeFiles/sim.dir/src/pga.cpp.o
  /home/karen/apps/geant4/include/Geant4/G4Threading.hh
  /home/karen/apps/geant4/include/Geant4/G4ThreeVector.hh
  /home/karen/apps/geant4/include/Geant4/G4Types.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIcmdWithADoubleAndUnit.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIcommand.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIdirectory.hh
+ /home/karen/apps/geant4/include/Geant4/G4UImessenger.hh
+ /home/karen/apps/geant4/include/Geant4/G4UIparameter.hh
+ /home/karen/apps/geant4/include/Geant4/G4UItokenNum.hh
  /home/karen/apps/geant4/include/Geant4/G4VExceptionHandler.hh
  /home/karen/apps/geant4/include/Geant4/G4VPrimaryGenerator.hh
  /home/karen/apps/geant4/include/Geant4/G4VUserPrimaryGeneratorAction.hh

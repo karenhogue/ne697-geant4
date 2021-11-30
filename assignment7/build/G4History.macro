@@ -1,10 +1,10 @@
 /run/verbose 0
 /run/initialize 
 /run/physicsModified 
-/control/execute vis.mac
-/vis/open OGL
-/vis/sceneHandler/create OGL
-/vis/viewer/create ! ! 600
+/tracking/storeTrajectory 1
+/ne697/gun/offset 50 cm
+/ne697/gun/offset 5 cm
+ewer/create ! ! 600
 /vis/viewer/refresh
 /vis/verbose warnings
 /vis/viewer/set/autoRefresh false
@@ -45,3 +45,7 @@
 /vis/scene/endOfEventAction accumulate 100
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
+/ne697/gun/offset 50 cm
+/run/beamOn 1
+/ne697/gun/offset 5 cm
+/run/beamOn 1
