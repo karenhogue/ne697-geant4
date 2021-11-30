@@ -1,6 +1,6 @@
-/run/initialize
+/ne697/material/det_material G4_Ge
+/gun/energy 300 keV
 
-/gun/particle neutron
-/gun/energy 1 eV
+/run/initialize
 
 /run/beamOn 100000

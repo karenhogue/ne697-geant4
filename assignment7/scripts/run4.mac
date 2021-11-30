@@ -1,6 +1,5 @@
 /run/initialize
 
-/gun/particle neutron
-/gun/energy 10 MeV
+/ne697/gun/offset 50 cm
 
 /run/beamOn 100000

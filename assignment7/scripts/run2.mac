@@ -1,5 +1,5 @@
-/run/initialize
-
 /ne697/geometry/det_thickness 1 cm
+
+/run/initialize
 
 /run/beamOn 100000
