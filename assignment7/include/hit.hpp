@@ -5,7 +5,7 @@
 #include "G4ThreeVector.hh"
 #include "G4VHit.hh"
 
-namespace msrfeed {
+namespace ne697 {
   class Hit: public G4VHit {
     public:
       Hit(int trackid, int parent_id, G4String const& volume,

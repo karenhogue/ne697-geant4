@@ -3,7 +3,7 @@
 #include "G4UImessenger.hh"
 #include "G4UIcmdWithAString.hh"
 
-namespace msrfeed {
+namespace ne697 {
   // Forward declaration, to resolve circular dependency with DetectorConstruction
   class DetectorConstruction;
 

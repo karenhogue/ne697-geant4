@@ -4,7 +4,7 @@
 #include "G4RunManager.hh"
 #include "G4Run.hh"
 
-namespace msrfeed {
+namespace ne697 {
   EventAction::EventAction():
     G4UserEventAction()
     {

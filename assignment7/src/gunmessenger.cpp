@@ -2,7 +2,7 @@
 #include "pga.hpp"
 #include "G4UnitsTable.hh"
 
-namespace msrfeed {
+namespace ne697 {
   GunMessenger::GunMessenger(PGA* pga_gun):
     m_pga_gun(pga_gun)
   {

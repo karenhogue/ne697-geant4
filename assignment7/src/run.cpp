@@ -5,7 +5,7 @@
 #include "G4THitsCollection.hh"
 #include "G4UnitsTable.hh"
 
-namespace msrfeed {
+namespace ne697 {
   Run::Run():
     G4Run(),
     m_hits()

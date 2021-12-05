@@ -3,7 +3,7 @@
 #include "G4Run.hh"
 #include "hit.hpp"
 
-namespace msrfeed {
+namespace ne697 {
   class Run: public G4Run {
     public:
       Run();

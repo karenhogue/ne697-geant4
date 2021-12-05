@@ -2,7 +2,7 @@
 #define ACTION_INITIALIZATION_HPP
 #include "G4VUserActionInitialization.hh"
 
-namespace msrfeed {
+namespace ne697 {
   class ActionInitialization: public G4VUserActionInitialization {
     public:
       ActionInitialization();

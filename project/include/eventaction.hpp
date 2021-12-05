@@ -2,7 +2,7 @@
 #define EVENT_ACTION_HPP
 #include "G4UserEventAction.hh"
 
-namespace ne697 {
+namespace msrfeed {
   class EventAction: public G4UserEventAction {
     public:
       EventAction();

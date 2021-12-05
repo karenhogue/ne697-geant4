@@ -5,7 +5,7 @@
 #include "gunmessenger.hpp"
 
 
-namespace ne697 {
+namespace msrfeed {
   PGA::PGA():
     G4VUserPrimaryGeneratorAction(),
     m_gun(new G4ParticleGun(1)),

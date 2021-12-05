@@ -1,7 +1,7 @@
 #include "runmessenger.hpp"
 #include "runaction.hpp"
 
-namespace msrfeed {
+namespace ne697 {
   RunMessenger::RunMessenger(RunAction* runaction):
     m_runAction(runaction)
   {

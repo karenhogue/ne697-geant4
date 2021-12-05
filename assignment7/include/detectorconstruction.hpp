@@ -4,7 +4,7 @@
 #include "G4PVPlacement.hh"
 #include "G4LogicalVolume.hh"
 
-namespace msrfeed {
+namespace ne697 {
   // Forward declaration, to resolve circular dependency with GeometryMessenger
   // You still need to #include "geometrymessenger.hpp" in
   // detectorconstruction.cpp

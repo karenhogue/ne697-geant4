@@ -5,7 +5,7 @@
 #include "G4SystemOfUnits.hh"
 #include "runmessenger.hpp"
 
-namespace msrfeed {
+namespace ne697 {
   RunAction::RunAction():
     G4UserRunAction(),
     m_fSaveData(true),

@@ -4,7 +4,7 @@
 #include "G4ParticleGun.hh"
 #include "G4VUserPrimaryGeneratorAction.hh"
 
-namespace ne697 {
+namespace msrfeed {
   class GunMessenger;
   class PGA: public G4VUserPrimaryGeneratorAction {
     public:

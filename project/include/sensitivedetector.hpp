@@ -3,7 +3,7 @@
 #include "G4VSensitiveDetector.hh"
 #include "hit.hpp"
 
-namespace ne697 {
+namespace msrfeed {
   class SensitiveDetector : public G4VSensitiveDetector {
   public:
     SensitiveDetector(G4String const& name);

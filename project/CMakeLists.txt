@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 project(g4-ne697)
-set(APP_NAME sim)
+set(APP_NAME msr_feed)
 
 # C++ options
 set(CMAKE_CXX_STANDARD 17) 

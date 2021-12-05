@@ -2,7 +2,7 @@
 #include "G4UnitsTable.hh"
 #include "G4VProcess.hh"
 
-namespace msrfeed {
+namespace ne697 {
   SensitiveDetector::SensitiveDetector(G4String const& name):
     G4VSensitiveDetector(name),
     m_id(-1),

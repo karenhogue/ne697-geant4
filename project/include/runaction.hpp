@@ -4,7 +4,7 @@
 #include "G4UserRunAction.hh"
 #include "hit.hpp"
 
-namespace ne697 {
+namespace msrfeed {
   // Forward declaration, to address circular dependency with RunMessenger
   // You still need to #include "runmessenger.hpp" in runaction.cpp
   class RunMessenger;

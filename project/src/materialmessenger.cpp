@@ -2,7 +2,7 @@
 #include "detectorconstruction.hpp"
 #include "G4UnitsTable.hh"
 
-namespace ne697 {
+namespace msrfeed {
   MaterialMessenger::MaterialMessenger(DetectorConstruction* dc):
     m_dc(dc)
   {

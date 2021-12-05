@@ -4,7 +4,7 @@
 #include "G4UIcmdWithABool.hh"
 #include "G4UIcmdWithAString.hh"
 
-namespace msrfeed {
+namespace ne697 {
   // Forward declaration, to resolve circular dependency with RunAction
   // You still need to #include "runaction.hpp" in runmessenger.cpp
   class RunAction;

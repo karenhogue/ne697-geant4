@@ -9,7 +9,7 @@
 #include "geometrymessenger.hpp"
 #include "materialmessenger.hpp"
 
-namespace ne697 {
+namespace msrfeed {
   DetectorConstruction::DetectorConstruction():
     G4VUserDetectorConstruction(),
     m_trackingVols(),
