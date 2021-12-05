@@ -4,7 +4,7 @@
 #include "pga.hpp"
 #include "eventaction.hpp"
 
-namespace ne697 {
+namespace msrfeed {
   ActionInitialization::ActionInitialization():
     G4VUserActionInitialization()
   {

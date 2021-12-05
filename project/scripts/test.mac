@@ -1,0 +1,7 @@
+/ne697/geometry/det_thickness -1 cm
+
+/run/initialize
+
+/ne697/gun/offset -20 cm
+
+/run/beamOn 100000

@@ -1,6 +1,6 @@
 #include "hit.hpp"
 
-namespace ne697 {
+namespace msrfeed {
   /****** GEANT4 BOILERPLATE ******/
   G4ThreadLocal G4Allocator<Hit>* HitAllocator = nullptr;
   /****** GEANT4 BOILERPLATE ******/
