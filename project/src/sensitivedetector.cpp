@@ -39,7 +39,7 @@ namespace msrfeed {
         if (step->GetTotalEnergyDeposit() <= 0){
           return true;
         }
-        auto hit = new ne697::Hit(
+        auto hit = new msrfeed::Hit(
             track->GetTrackID(), track->GetParentID(), track->GetVolume()->GetName(),
             track->GetDefinition()->GetParticleName(),
             (track->GetCreatorProcess() ? track->GetCreatorProcess()->GetProcessName()

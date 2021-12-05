@@ -14,9 +14,9 @@ int main(int argc, char* argv[]) {
     physics_list->SetVerboseLevel(0);
     run_manager->SetUserInitialization(physics_list);
     // Geometry
-    run_manager->SetUserInitialization(new ne697::DetectorConstruction);
+    run_manager->SetUserInitialization(new msrfeed::DetectorConstruction);
     // Action classes
-    run_manager->SetUserInitialization(new ne697::ActionInitialization);
+    run_manager->SetUserInitialization(new msrfeed::ActionInitialization);
 
     // Check number of command-line args, which controls whether we run
     // in visual mode or batch mode
