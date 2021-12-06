@@ -29,11 +29,15 @@ namespace msrfeed {
       G4double const& get_det_thickness() const;
       void set_det_size(G4double const& detsize);
       G4double const& get_det_size() const;
+      void set_det_standoff(G4double const& detstandoff);
+      G4double const& get_det_standoff() const;
       void set_det_material(G4String const& detmaterial);
-      G4String const& get_det_material() const;      
+      G4String const& get_det_material() const;   
+      void set_salt_material(G4String const& saltmaterial);
+      G4String const& get_salt_material() const;     
 
     private:
-
+      void build_materials();
       // List of G4LogicalVolumes we want to connect to the SensitiveDetector
       std::vector<G4LogicalVolume*> m_trackingVols;
 
@@ -42,10 +46,13 @@ namespace msrfeed {
 
       // Variables we will be modifying from the UI, so we want them to be
       // attached to DetectorConstruction. Then, when Construct() is called,
-      // m_detSize holds whatever value the user set
+      // these variables hold whatever value the user set
       G4double m_detSize;
       G4double m_detThickness;
+      G4double m_detStandoff;
       G4String m_detMaterial;
+      G4double m_enrichment;
+      G4String m_saltMaterial;
   };
 }
 

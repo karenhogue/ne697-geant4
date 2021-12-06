@@ -19,6 +19,7 @@ namespace msrfeed {
     DetectorConstruction* m_dc;
     G4UIdirectory* m_directory;
     G4UIcmdWithAString* m_detMaterialCmd;
+    G4UIcmdWithAString* m_saltMaterialCmd;
   };  
 }
 

@@ -8,7 +8,7 @@ namespace msrfeed {
   {
     // Directory: /ne697/geometry
     m_directory = new G4UIdirectory("/ne697/geometry/");
-    m_directory->SetGuidance("Change thickness and size of the detector geometry.");
+    m_directory->SetGuidance("Change thickness, size, and standoff distance of the detector.");
 
     // Set detector thickness: /ne697/geometry/det_thickness
     m_detThicknessCmd = new G4UIcmdWithADoubleAndUnit("/ne697/geometry/det_thickness", this);
@@ -23,12 +23,20 @@ namespace msrfeed {
     m_detSizeCmd->SetParameterName("x", true);
     m_detSizeCmd->SetDefaultValue(m_dc->get_det_size());
     m_detSizeCmd->AvailableForStates(G4State_PreInit);
+
+    // Set detector standoff distance: /ne697/geometry/det_standoff
+    m_detStandoffCmd = new G4UIcmdWithADoubleAndUnit("/ne697/geometry/det_standoff", this);
+    m_detStandoffCmd->SetGuidance("Set the standoff distance of the detector from the pipe.");
+    m_detStandoffCmd->SetParameterName("standoff", true);
+    m_detStandoffCmd->SetDefaultValue(m_dc->get_det_standoff());
+    m_detStandoffCmd->AvailableForStates(G4State_PreInit);
   }
 
   GeometryMessenger::~GeometryMessenger() {
     delete m_directory;
     delete m_detThicknessCmd;
     delete m_detSizeCmd;
+    delete m_detStandoffCmd;
   }
 
   void GeometryMessenger::SetNewValue(G4UIcommand* cmd, G4String val) {
@@ -50,6 +58,13 @@ namespace msrfeed {
       auto parsed_val = m_detSizeCmd->GetNewDoubleValue(val);
       m_dc->set_det_size(parsed_val);
       G4cout << "Detector size set to " << G4BestUnit(parsed_val, "Length")
+        << G4endl;
+    }
+
+    if (cmd == m_detStandoffCmd) {
+      auto parsed_val = m_detStandoffCmd->GetNewDoubleValue(val);
+      m_dc->set_det_standoff(parsed_val);
+      G4cout << "Detector standoff distance set to " << G4BestUnit(parsed_val, "Length")
         << G4endl;
     }
     // Command didn't match

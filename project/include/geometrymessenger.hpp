@@ -22,6 +22,7 @@ namespace msrfeed {
     G4UIdirectory* m_directory;
     G4UIcmdWithADoubleAndUnit* m_detThicknessCmd;
     G4UIcmdWithADoubleAndUnit* m_detSizeCmd;
+    G4UIcmdWithADoubleAndUnit* m_detStandoffCmd;
   };  
 }
 
