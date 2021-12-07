@@ -1,4 +1,4 @@
-/ne697/run/save_path ./run1_hits.csv
+/ne697/run/save_path ./hits_Cl_close.csv
 
 /ne697/material/salt_material Clsalt
 /ne697/geometry/det_standoff 2 cm

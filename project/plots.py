@@ -18,10 +18,10 @@ ENERGY = 9 # keV
 TIME = 10 # ns
 
 # Read in all of the data
-fname = "run1_hits.csv"
-#fname = "hits_5keV.csv"
-#fname = "hits_100keV.csv"
-#fname = "hits_1000keV.csv"
+#fname = "hits_Flibe_close.csv"
+fname = "hits_Flibe_far.csv"
+#fname = "hits_Cl_close.csv"
+#fname = "hits_Cl_far.csv"
 with open("build/" + fname, "r") as f:
     lines = f.readlines()
     lines = [line.split(",") for line in lines]
