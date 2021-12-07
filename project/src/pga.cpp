@@ -10,8 +10,8 @@ namespace msrfeed {
   {
     G4cout << "Creating PGA" << G4endl;
     m_gun->SetParticleDefinition(G4Gamma::Definition());
-    m_gun->SetParticleEnergy(1.*MeV);
-    m_gun->SetParticleMomentumDirection(G4ThreeVector(0., -1., 0.));
+    m_gun->SetParticleEnergy(185.7*keV);
+    m_gun->SetParticleMomentumDirection(G4ThreeVector(0., 1., 0.));
   }
 
   PGA::~PGA() {

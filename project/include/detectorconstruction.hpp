@@ -54,6 +54,7 @@ namespace msrfeed {
       G4double m_enrichment;
       G4String m_saltMaterial;
       G4double m_innerDiam;
+      G4double m_outerDiam;
   };
 }
 

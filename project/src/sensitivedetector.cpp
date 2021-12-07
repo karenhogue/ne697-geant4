@@ -33,9 +33,11 @@ namespace msrfeed {
         auto track = step->GetTrack();
         // "must use class tag", G4VSensitiveDetector has a member function
         // called Hit() so this would be ambiguous
+        /*
         if (track->GetDefinition()->GetParticleName() != "gamma"){
           return true;
         }
+        */
         if (step->GetTotalEnergyDeposit() <= 0){
           return true;
         }
