@@ -165,10 +165,10 @@ namespace msrfeed {
     //define FLiBe built out of compounds
     density = 2.2409*g/cm3; // this is density of the FLiBe salt at 973K -- could incorporate T dependence (2.575-0.000513*T)
     auto FLiBe = new G4Material("FLiBe", density, ncomponents=4);
-    FLiBe->AddMaterial(LiF, fractionmass=65.*perCent); //TODO - need to change these from mol % to mass %
-    FLiBe->AddMaterial(BeF2, fractionmass=29.2*perCent); //TODO - need to change these from mol % to mass %
-    FLiBe->AddMaterial(UF4, fractionmass=0.8*perCent); //TODO - need to change these from mol % to mass %
-    FLiBe->AddMaterial(ZrF4, fractionmass=5.*perCent); //TODO - need to change these from mol % to mass %
+    FLiBe->AddMaterial(LiF, fractionmass=3.042352114*perCent); 
+    FLiBe->AddMaterial(BeF2, fractionmass=2.598514162*perCent); 
+    FLiBe->AddMaterial(UF4, fractionmass=0.465490661*perCent); 
+    FLiBe->AddMaterial(ZrF4, fractionmass=1.466739176*perCent); 
   
     //********************build chloride salt - based on molarity of MCRE salt
     a = 35.453*g/mole; //ASSUMPTION: this assumes natural Cl, not enriched
@@ -190,8 +190,8 @@ namespace msrfeed {
     //define chloride salt
     density = 2.340*g/cm3; // this is incorrect - based on assumption for UCl3-NaCl-PuCl3
     auto Clsalt = new G4Material("Clsalt", density, ncomponents=2);
-    Clsalt->AddMaterial(NaCl, fractionmass=67.*perCent); //TODO - need to change these from mol % to mass %
-    Clsalt->AddMaterial(UCl3, fractionmass=33.*perCent); //TODO - need to change these from mol % to mass %
+    Clsalt->AddMaterial(NaCl, fractionmass=9.720172782*perCent); 
+    Clsalt->AddMaterial(UCl3, fractionmass=28.21245221*perCent); 
 
     //***************build hastelloy for piping
     
