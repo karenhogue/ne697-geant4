@@ -7,6 +7,7 @@
 # 1 event at a time, and doing more threads makes the output harder to
 # read
 /run/numberOfThreads 1
+
 /run/initialize
 
 # Visualization settings

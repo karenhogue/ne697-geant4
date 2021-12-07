@@ -19,7 +19,8 @@ namespace msrfeed {
     m_detStandoff(2*cm),
     m_detMaterial("G4_SODIUM_IODIDE"),
     m_enrichment(19.75*perCent),
-    m_saltMaterial("FLiBe")
+    m_saltMaterial("FLiBe"),
+    m_innerDiam(15.024*cm)
   {
     G4cout << "Creating DetectorConstruction" << G4endl;
     m_geom_messenger = new GeometryMessenger(this);
@@ -55,7 +56,7 @@ namespace msrfeed {
     );
 
     // ***** pipe
-    auto pipe_solid = new G4Tubs("pipe_solid", 20.*cm, 25.*cm, 40.*cm, 0.*deg, 360.*deg); //TODO - edit these dimensions; z is halflength
+    auto pipe_solid = new G4Tubs("pipe_solid", m_innerDiam, (m_innerDiam+2.54), 40.*cm, 0.*deg, 360.*deg); //TODO - edit these dimensions; z is halflength
     auto pipe_mat = nist->FindOrBuildMaterial("G4_W"); //TODO - edit this to hastelloy??
     auto pipe_log = new G4LogicalVolume(
         pipe_solid, 
