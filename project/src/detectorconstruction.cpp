@@ -16,9 +16,9 @@ namespace msrfeed {
     m_trackingVols(),
     m_detSize(50.*cm),
     m_detThickness(5.*cm),
-    m_detStandoff(2*cm),
+    m_detStandoff(2.*cm),
     m_detMaterial("G4_SODIUM_IODIDE"),
-    m_enrichment(19.75*perCent),
+    m_UEnrichment(19.75*perCent),
     m_saltMaterial("FLiBe"),
     m_innerDiam(15.024*cm),
     m_outerDiam(m_innerDiam+2.54)
@@ -137,7 +137,7 @@ namespace msrfeed {
     auto elF = new G4Element(name="Fluorine", symbol="F", z=9., a);
     a = 9.012182*g/mole;
     auto elBe = new G4Element(name="Beryllium", symbol="Be", z=4., a);
-    a = (m_enrichment*235 + (1-m_enrichment)*238)*g/mole;
+    a = (m_UEnrichment*235 + (1-m_UEnrichment)*238)*g/mole;
     G4cout << "a of U = " << a << G4endl;
     auto elU = new G4Element(name="Uranium", symbol="U", z=92., a);
     a = 91.224*g/mole;
@@ -264,5 +264,14 @@ namespace msrfeed {
 
   G4String const& DetectorConstruction::get_salt_material() const {
     return m_saltMaterial;
+  }
+
+  void DetectorConstruction::set_U_enrichment(G4double const& Uenrichment) { 
+    m_UEnrichment = Uenrichment;
+    return;
+  }
+
+  G4double const& DetectorConstruction::get_U_enrichment() const {
+    return m_UEnrichment;
   }
 }

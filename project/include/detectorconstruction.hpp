@@ -34,7 +34,9 @@ namespace msrfeed {
       void set_det_material(G4String const& detmaterial);
       G4String const& get_det_material() const;   
       void set_salt_material(G4String const& saltmaterial);
-      G4String const& get_salt_material() const;     
+      G4String const& get_salt_material() const;   
+      G4double const& get_U_enrichment() const;
+      void set_U_enrichment(G4double const& Uenrichment);  
 
     private:
       void build_materials();
@@ -51,7 +53,7 @@ namespace msrfeed {
       G4double m_detThickness;
       G4double m_detStandoff;
       G4String m_detMaterial;
-      G4double m_enrichment;
+      G4double m_UEnrichment;
       G4String m_saltMaterial;
       G4double m_innerDiam;
       G4double m_outerDiam;

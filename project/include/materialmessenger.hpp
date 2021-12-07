@@ -2,6 +2,7 @@
 #define MATERIAL_MESSENGER_HPP
 #include "G4UImessenger.hh"
 #include "G4UIcmdWithAString.hh"
+#include "G4UIcmdWithADoubleAndUnit.hh"
 
 namespace msrfeed {
   // Forward declaration, to resolve circular dependency with DetectorConstruction
@@ -20,6 +21,7 @@ namespace msrfeed {
     G4UIdirectory* m_directory;
     G4UIcmdWithAString* m_detMaterialCmd;
     G4UIcmdWithAString* m_saltMaterialCmd;
+    G4UIcmdWithADoubleAndUnit* m_UEnrichmentCmd;
   };  
 }
 
