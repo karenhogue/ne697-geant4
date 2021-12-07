@@ -1,7 +1,8 @@
 /ne697/run/save_path ./run1_hits.csv
 
-#/ne697/material/salt_material FLiBe
-#/ne
+/ne697/material/salt_material Clsalt
+/ne697/geometry/det_standoff 15 cm
+
 
 /run/initialize
 
