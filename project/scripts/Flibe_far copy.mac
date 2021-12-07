@@ -1,0 +1,17 @@
+/ne697/run/save_path ./run1_hits.csv
+
+#/ne697/material/salt_material FLiBe
+#/ne
+
+/run/initialize
+
+/gps/particle gamma
+/gps/pos/type Volume
+/gps/pos/shape Cylinder
+/gps/pos/centre 0. 0. 0. cm
+/gps/pos/radius 15.024 cm
+/gps/pos/halfz 40. cm
+/gps/ang/type iso
+/gps/energy 185.7 keV
+
+/run/beamOn 100000
