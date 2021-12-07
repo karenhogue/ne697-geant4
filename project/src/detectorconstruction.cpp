@@ -128,7 +128,7 @@ namespace msrfeed {
     G4String name, symbol;
     G4int ncomponents, natoms;
 
-    //build FLiBe-U salt
+    //****************build FLiBe-U salt
     a = 6.941*g/mole; //ASSUMPTION: this assumes natural Li, not enriched
     auto elLi = new G4Element(name="Lithium", symbol="Li", z=3., a);
     a = 18.9984032*g/mole;
@@ -168,7 +168,7 @@ namespace msrfeed {
     FLiBe->AddMaterial(UF4, fractionmass=0.8*perCent); //TODO - need to change these from mol % to mass %
     FLiBe->AddMaterial(ZrF4, fractionmass=5.*perCent); //TODO - need to change these from mol % to mass %
   
-    //build chloride salt - based on molarity of MCRE salt
+    //********************build chloride salt - based on molarity of MCRE salt
     a = 35.453*g/mole; //ASSUMPTION: this assumes natural Cl, not enriched
     auto elCl= new G4Element(name="Chlorine", symbol="Cl", z=17., a);
     a = 22.989770*g/mole;
@@ -190,6 +190,33 @@ namespace msrfeed {
     auto Clsalt = new G4Material("Clsalt", density, ncomponents=2);
     Clsalt->AddMaterial(NaCl, fractionmass=67.*perCent); //TODO - need to change these from mol % to mass %
     Clsalt->AddMaterial(UCl3, fractionmass=33.*perCent); //TODO - need to change these from mol % to mass %
+
+    //***************build hastelloy for piping
+    
+    a = 58.6934*g/mole; 
+    auto elNi= new G4Element(name="Nickel", symbol="Ni", z=28., a);
+    a = 51.99616*g/mole;
+    auto elCr = new G4Element(name="Chromium", symbol="Cr", z=11., a);
+    a = 95.942*g/mole; 
+    auto elMo = new G4Element(name="Molybdenum", symbol="Mo", z=42., a);
+    a = 55.8452*g/mole;
+    auto elFe = new G4Element(name="Iron", symbol="Fe", z=26., a);
+    a = 28.08553*g/mole; 
+    auto elSi= new G4Element(name="Silicon", symbol="Si", z=14., a);
+    a = 54.9380499*g/mole;
+    auto elMn = new G4Element(name="Manganese", symbol="Mn", z=25., a);
+    a = 12.01078*g/mole; 
+    auto elC= new G4Element(name="Carbon", symbol="C", z=6., a);
+        
+    density = 8.86*g/cm3; // this is at room temperature (22C)
+    auto hastelloy = new G4Material("hastelloy", density, ncomponents=7);
+    hastelloy->AddElement(elNi, fractionmass=70.12*perCent);
+    hastelloy->AddElement(elCr, fractionmass=7.*perCent);
+    hastelloy->AddElement(elMo, fractionmass=16.*perCent);
+    hastelloy->AddElement(elFe, fractionmass=5.*perCent);
+    hastelloy->AddElement(elSi, fractionmass=1.*perCent);
+    hastelloy->AddElement(elMn, fractionmass=0.80*perCent);
+    hastelloy->AddElement(elC, fractionmass=0.08*perCent);
   }
 
   void DetectorConstruction::set_det_size(G4double const& detsize) {
